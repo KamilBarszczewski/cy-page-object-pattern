@@ -1,0 +1,16 @@
+{
+  "name": "cy-page-object-pattern",
+  "version": "1.0.0",
+  "description": "\"QAA Module 3 Homework\"",
+  "main": "index.js",
+  "scripts": {
+    "cypress:run:chrome": "npx cypress run -b chrome --headed --spec cypress/e2e/pageObjectLoginUser.cy.js",
+    "cypress:run:firefox": "npx cypress run -b firefox",
+    "cypress:run:chrome:simple": "npx cypress run"
+  },
+  "author": "Kamil Barszczewski",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.3"
+  }
+}
