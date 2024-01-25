@@ -7,7 +7,7 @@ const login = new Login()
 const homePage = new HomePage()
 
 describe('login & logout on GoIT page', () => {
-    before('go to page', () => {
+    beforeEach('go to page', () => {
         cy.visit('/');
     });
 
@@ -22,12 +22,6 @@ describe('login & logout on GoIT page', () => {
             cy.wait(3000)
         });
     });
-});
-
-describe('login & logout on GoIT page', () => {
-    before('go to page', () => {
-        cy.visit('/');
-    });
 
     it('succesfully login user 2 to the GoIT page', () => {
         cy.loginUserCmd('testowyqa@qa.team', 'QA!automation-1')
@@ -36,3 +30,4 @@ describe('login & logout on GoIT page', () => {
         cy.wait(3000)
     });
 });
+
