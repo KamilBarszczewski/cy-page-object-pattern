@@ -24,7 +24,7 @@ describe('login & logout on GoIT page', () => {
     });
 });
 
-describe.only('login & logout on GoIT page', () => {
+describe('login & logout on GoIT page', () => {
     before('go to page', () => {
         cy.visit('/');
     });
